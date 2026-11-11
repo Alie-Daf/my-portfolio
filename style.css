@@ -2,27 +2,25 @@
   --bg: #050c18;
   --surface: #0b1830;
   --text: #f3f3f3;
-  --mute: #c2b99f;
-  --line: rgba(255, 214, 10, 0.2);
-  --accent: #ffbf1c;
-  --accent2: #ffd60a;
-  --deep: #d1a309;
-  --on-accent: #050c18;
+  --mute: #9db2cf;
+  --line: rgba(126, 189, 233, 0.2);
+  --accent: #3c91ed;
+  --accent2: #7ebde9;
+  --deep: #294e90;
   --serif: 'Fraunces', Georgia, serif;
   --sans: 'Manrope', system-ui, sans-serif;
   --pad: clamp(1.25rem, 5vw, 4rem);
 }
 
 [data-theme="light"] {
-  --bg: #fffaf0;
-  --surface: #fffdf8;
+  --bg: #f3f3f3;
+  --surface: #fff;
   --text: #050c18;
-  --mute: #56536a;
+  --mute: #44587a;
   --line: rgba(5, 12, 24, 0.16);
-  --accent: #d1a309;
-  --accent2: #8b6900;
-  --deep: #ffbf1c;
-  --on-accent: #050c18;
+  --accent: #294e90;
+  --accent2: #3c91ed;
+  --deep: #7ebde9;
 }
 
 * {
@@ -177,13 +175,13 @@ h1, h2, h3 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent2);
-  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent2) 55%, transparent);
+  background: #4ade80;
+  box-shadow: 0 0 0 0 #4ade8088;
   animation: ping 2s infinite;
 }
 
 @keyframes ping {
-  70% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent2) 0%, transparent); }
+  70% { box-shadow: 0 0 0 8px #4ade8000; }
 }
 
 .name {
@@ -258,12 +256,12 @@ h1, h2, h3 {
 .btn.primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: var(--on-accent);
+  color: #fff;
 }
 
 .btn.primary:hover {
   background: var(--accent2);
-  color: var(--on-accent);
+  color: #050c18;
 }
 
 .hero-photo {
@@ -391,7 +389,7 @@ h1, h2, h3 {
 .stack span:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: var(--on-accent);
+  color: #fff;
 }
 
 .hint {
@@ -637,7 +635,7 @@ time {
 .mail em {
   font: 600 0.85rem var(--sans);
   background: var(--accent);
-  color: var(--on-accent);
+  color: #fff;
   border-radius: 99px;
   padding: 0.2rem 0.8rem;
 }
