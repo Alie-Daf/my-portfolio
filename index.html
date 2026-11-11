@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nathalie Jane M. Francisco — Portfolio</title>
+<meta name="description" content="Third-year BSIT student, pitch presenter and technical writer. Portfolio of Nathalie Jane Francisco." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<script>
+  try {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  } catch (error) {
+    // Theme persistence is optional when storage is unavailable.
+  }
+</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<nav class="nav" aria-label="Main navigation">
+  <a href="#home" class="logo">NJ</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light theme" aria-pressed="false"><span></span></button>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-text">
+    <p class="status"><i></i>Open to internships</p>
+    <h1 class="name"><span><b>Nathalie&nbsp;Jane</b></span><span><b>Francisco</b></span></h1>
+    <p class="role">BSIT student, pitch presenter and technical writer in Arayat, Pampanga.</p>
+    <p class="tagline">Top 20 of 84 teams at the Philippine Startup Challenge XI, with hands-on competition experience in technical writing, IT marketing and startup development.</p>
+    <div class="cta">
+      <a href="#projects" class="btn primary">View projects</a>
+      <a href="#contact" class="btn">Get in touch</a>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <div class="arch"><img src="assets/photo.png" alt="Nathalie Jane M. Francisco" /></div>
+    <figcaption>3rd year · Pampanga State Agricultural University</figcaption>
+  </figure>
+</header>
+
+<section id="about" class="section">
+  <h2 class="title">Builder, presenter, aspiring professional.</h2>
+  <div class="about">
+    <div class="prose">
+      <p>I'm a third-year Bachelor of Science in Information Technology student at Pampanga State Agricultural University. I care about clear communication, strong presentation skills and turning ideas into real products, whether through technical writing, marketing pitches or startup development.</p>
+      <p>I'm looking for an internship where I can apply my technical and communication skills and grow in a professional IT environment. I'm also open to collaborations and freelance work.</p>
+    </div>
+    <div class="skills">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Confident public speaking and pitching</li>
+        <li>Critical thinking and problem solving</li>
+        <li>Technical and creative writing</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+  </div>
+  <div class="stack">
+    <div><h3>Frontend</h3><p><span>HTML</span><span>CSS</span><span>JavaScript</span></p></div>
+    <div><h3>Backend</h3><p><span>PHP</span><span>MySQL</span></p></div>
+    <div><h3>Other</h3><p><span>Git &amp; GitHub</span><span>Technical writing</span><span>Pitch decks</span></p></div>
+    <div><h3>Learning</h3><p><span>AI fundamentals</span><span>SoloLearn courses</span></p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="title">Selected projects</h2>
+  <p class="hint">Select a project to read more.</p>
+  <div class="acc">
+    <article class="proj open">
+      <button class="proj-head" aria-expanded="true" aria-controls="project-wanderra"><span class="pt">Wanderra</span><span class="pm">Mobile app · 2026</span><span class="pi" aria-hidden="true"></span></button>
+      <div class="proj-panel" id="project-wanderra"><div>
+        <p>Mobile app our team built and published on the Google Play Store. I pitched and developed the marketing plan for it during the IRCITE IT Marketing Challenge 2026.</p>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.cafecircuit.wanderra" target="_blank" rel="noopener">Open on Play Store</a></div>
+      </div></div>
+    </article>
+    <article class="proj">
+      <button class="proj-head" aria-expanded="false" aria-controls="project-bantay"><span class="pt">Bantay Eskwela</span><span class="pm">Startup pitch · 2026</span><span class="pi" aria-hidden="true"></span></button>
+      <div class="proj-panel" id="project-bantay"><div>
+        <p>School safety solution pitched at the Philippine Startup Challenge XI. I served as the team's presenter, and we placed in the Top 20 of 84 teams.</p>
+        <div class="links"><span class="tag">Top 20 of 84 teams</span></div>
+      </div></div>
+    </article>
+    <article class="proj">
+      <button class="proj-head" aria-expanded="false" aria-controls="project-sns"><span class="pt">SNS Flower Shop</span><span class="pm">Website · HTML, CSS</span><span class="pi" aria-hidden="true"></span></button>
+      <div class="proj-panel" id="project-sns"><div>
+        <p>Web-based flower shop for SnS Flowers &amp; Events, with a clean product showcase, categories, recommendations and event highlights.</p>
+        <div class="links"><a href="https://alie-daf.github.io/sns-flower-shop/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/Alie-Daf/sns-flower-shop" target="_blank" rel="noopener">Source code</a></div>
+      </div></div>
+    </article>
+    <article class="proj">
+      <button class="proj-head" aria-expanded="false" aria-controls="project-book"><span class="pt">Book-to-Go</span><span class="pm">Web app · PHP</span><span class="pi" aria-hidden="true"></span></button>
+      <div class="proj-panel" id="project-book"><div>
+        <p>PHP-based project focused on book-related functionality and web development practices.</p>
+        <div class="links"><a href="https://github.com/Alie-Daf/book-to-go" target="_blank" rel="noopener">Source code</a></div>
+      </div></div>
+    </article>
+    <article class="proj">
+      <button class="proj-head" aria-expanded="false" aria-controls="project-diary"><span class="pt">Dafny’s Diary in Bloom</span><span class="pm">Interactive site</span><span class="pi" aria-hidden="true"></span></button>
+      <div class="proj-panel" id="project-diary"><div>
+        <p>Interactive personal diary with letters, bouquet, photobooth, memories and library sections. Soft, romantic design with a secret-question entry gate.</p>
+        <div class="links"><a href="https://alie-daf.github.io/aphero-dafnys-diary-in-bloom/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/Alie-Daf/aphero-dafnys-diary-in-bloom" target="_blank" rel="noopener">Source code</a></div>
+      </div></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2 class="title">Experience</h2>
+  <div class="timeline">
+    <div class="item"><time>2026</time><div><h3>Philippine Startup Challenge XI</h3><p class="rt">Participant, Top 20 of 84 teams</p><p>Served as the team's presenter and pitched Bantay Eskwela. Earned a place among the top 20 qualified startups.</p></div></div>
+    <div class="item"><time>2026</time><div><h3>IRCITE IT Marketing Challenge</h3><p class="rt">Participant</p><p>Pitched and developed a marketing plan for Wanderra, a mobile app our team built and published on the Google Play Store.</p></div></div>
+    <div class="item"><time>2025</time><div><h3>IRCITE Technical Writing</h3><p class="rt">Participant</p><p>Wrote and presented a technical paper in a collegiate technical writing competition.</p></div></div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2 class="title">Education</h2>
+  <div class="edu">
+    <div><time>2024 – now</time><h3>BS Information Technology</h3><p class="rt">Pampanga State Agricultural University</p><p>Consistent Dean's Lister and President's Lister from 1st to 2nd year. Focused on software development, technical writing and professional growth.</p></div>
+    <div><time>2022 – 2024</time><h3>Senior High School, STEM</h3><p class="rt">St. Nathanael Academy</p></div>
+    <div><time>2018 – 2022</time><h3>Junior High School</h3><p class="rt">Don Jesus Gonzales High School</p></div>
+  </div>
+  <ul class="highlights">
+    <li>Honor and High Honor student from Elementary to Senior High School</li>
+    <li>Dean's Lister and President's Lister in college</li>
+    <li>SoloLearn certificates, including AI fundamentals</li>
+  </ul>
+</section>
+
+<section id="contact" class="section contact">
+  <h2 class="title">Let's work together.</h2>
+  <p class="prose">Internship, collaboration, freelance project, or a conversation about tech and pitching. I'd love to hear from you.</p>
+  <button class="mail" id="copyMail" data-email="nathaliejanefrancisco@gmail.com" aria-label="Copy email address">
+    <span>nathaliejanefrancisco@gmail.com</span><em id="copyState" aria-live="polite">Copy</em>
+  </button>
+  <div class="links big">
+    <a href="mailto:nathaliejanefrancisco@gmail.com">Send an email</a>
+    <a href="https://www.linkedin.com/in/nathalie-jane-francisco" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Alie-Daf" target="_blank" rel="noopener">GitHub</a>
+    <a href="tel:+639056248092">Call</a>
+  </div>
+</section>
+
+<footer class="footer"><p>© 2026 Nathalie Jane M. Francisco</p><a href="#home">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
