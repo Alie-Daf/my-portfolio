@@ -528,10 +528,11 @@ h1, h2, h3 {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.5rem;
+  top: 1.05rem;
   bottom: 0.5rem;
   width: 2px;
   background: var(--line);
+  z-index: 0;
 }
 
 .timeline::after {
@@ -546,6 +547,7 @@ h1, h2, h3 {
   gap: 1.5rem;
   padding-bottom: 2.5rem;
   position: relative;
+  z-index: 1;
 }
 
 .item::before {
@@ -558,7 +560,8 @@ h1, h2, h3 {
   border-radius: 50%;
   background: var(--bg);
   border: 2px solid var(--accent2);
-  transform: translateX(-5px);
+  transform: translateX(-7px);
+  z-index: 1;
 }
 
 time {
